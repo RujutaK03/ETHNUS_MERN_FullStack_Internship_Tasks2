@@ -1,0 +1,19 @@
+.part1 {
+    width: 80%;
+    height: 50px;
+    background-color: lightslategrey;
+}
+
+.part2 {
+    width: 20%;
+    height: 50px;
+    background-color: lightslategrey;
+}
+
+.part2 h5 {
+    height: 86.2vh;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 50px;
+}

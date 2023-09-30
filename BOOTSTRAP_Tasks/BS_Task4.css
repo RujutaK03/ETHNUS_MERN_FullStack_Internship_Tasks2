@@ -1,0 +1,29 @@
+hr {
+    border: none;
+    background-color: black;
+    height: 4px;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(0.95);
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+}
+
+
+p {
+    width: 150px;
+    text-align: center;
+    padding: 0;
+}
