@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(yellow, orange, yellow);
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+tr {
+    line-height: 35px;
+}
+
+td {
+    border: none;
+    text-align: center;
+    width: 150px;
+}
+
+input {
+    width: 500px;
+    border: 1px solid black;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    margin-top: 15px;
+}
+
+#Select_Input td {
+    font-weight: bold;
+    text-align: left;
+}
+
+#Select_Input input {
+    width: 10px;
+    padding-left: 10px;
+}
+
+#Select_Input label {
+    font-weight: 100;
+    width: 10px;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.required {
+    border: 1px solid black;
+}
+
+#invalid {
+    color: red;
+    font-weight: bold;
+}

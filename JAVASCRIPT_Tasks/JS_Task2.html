@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS Task 2</title>
+</head>
+
+<body>
+    <script>
+        function alphabeticalSort(input_string) {
+            const letters = input_string.split('');
+            letters.sort();
+            const sorted_string = letters.join('');
+            return sorted_string;
+        }
+
+        const text = prompt("Enter a string : ");
+        document.write("You entered : " + text + "<br>");
+        document.write("Sorted string : " + alphabeticalSort(text));
+    </script>
+</body>
+
+</html>

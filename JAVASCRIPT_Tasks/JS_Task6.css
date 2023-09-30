@@ -1,0 +1,26 @@
+.card-title {
+    font-family: 'Italianno';
+    padding-top: 40px;
+    font-size: 70px;
+}
+
+.card-link {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 10px;
+}
+
+#invalid {
+    color: red;
+}
+
+.required.invalid {
+    border: 2px solid red;
+}

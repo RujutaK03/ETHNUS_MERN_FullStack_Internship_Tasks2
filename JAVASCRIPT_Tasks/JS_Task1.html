@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS Task 1</title>
+</head>
+
+<body>
+    <script>
+        function reverseNum(num) {
+            let reversed_number = 0;
+
+            while (num_copy !== 0) {
+                reversed_number = reversed_number * 10 + (num_copy % 10);
+                num_copy = Math.floor(num_copy / 10);
+            }
+
+            return reversed_number;
+        }
+
+        const number = prompt("Enter a number : ");
+
+        let num_copy = number;
+        document.write(" You entered : " + number + "<br>");
+        document.write(" Reverse of the number is : " + reverseNum(num_copy));
+    </script>
+</body>
+
+</html>

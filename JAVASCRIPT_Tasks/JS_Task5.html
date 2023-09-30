@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task 5</title>
+
+    <link rel="stylesheet" href="JS_Task5.css" />
+</head>
+
+<body>
+    <form id="myForm">
+        <div>
+            <label for="name"> Name : </label>
+            <input type="text" id="name" class="required" />
+            <p id="errorText" class="invalid"></p><br /><br />
+        </div>
+        <div>
+            <label for="Email"> Email : </label>
+            <input type="email" id="Email" class="required" />
+            <p id="errorText" class="invalid"></p><br /><br />
+        </div>
+        <div>
+            <label for="website"> Website : </label>
+            <input type="url" id="website" class="required" />
+            <p id="errorText" class="invalid"></p><br /><br />
+        </div>
+        <div>
+            <label for="message" rowspan="4"> Message : </label>
+            <textarea id="message" rows="4" cols="40" class="required"></textarea>
+            <p id="errorText" class="invalid"></p><br /><br />
+        </div>
+        <input type="button" value="Submit" onclick="validateForm()" class="button" />
+    </form>
+
+    <script src="JS_Task5.js"></script>
+
+</body>
+
+</html>

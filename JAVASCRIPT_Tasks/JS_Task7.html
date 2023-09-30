@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS Task 7 </title>
+
+    <style>
+        img {
+            display: block;
+        }
+
+        #train {
+            position: absolute;
+            left: 0;
+            top: 30%;
+            transition: left 1s linear;
+        }
+
+        button {
+            margin-top: 400px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="Assets/train.jpeg" id="train" />
+    <button type="button" id="start"> Start </button>
+    <button type="button" id="stop"> Stop </button>
+
+    <script>
+        const train = document.getElementById("train");
+        const startButton = document.getElementById("start");
+        const stopButton = document.getElementById("stop");
+
+        let animationInterval;
+        let currentPosition = 0;
+
+        function moveTrain() {
+            const maxWidth = window.innerWidth - train.clientWidth;
+
+            animationInterval = setInterval(() => {
+                currentPosition += 10;
+
+                if (currentPosition >= maxWidth) {
+                    currentPosition = 0;
+                }
+
+                train.style.left = currentPosition + 'px';
+            }, 100);
+        }
+
+        function stopTrain() {
+            clearInterval(animationInterval);
+        }
+
+        startButton.addEventListener('click', moveTrain);
+        stopButton.addEventListener('click', stopTrain);
+    </script>
+</body>
+
+</html>

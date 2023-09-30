@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS Task 8 </title>
+
+    <link rel="stylesheet" href="JS_Task8.css" />
+</head>
+
+<body>
+    <h1> Registration Form</h1>
+
+    <table>
+        <tr>
+            <td>
+                <label for="FirstName"> First Name </label>
+            </td>
+            <td><input type="text" id="FirstName" class="required" /></td>
+            <td id="invalid"> </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="LastName"> Last Name </label>
+            </td>
+            <td><input type="text" id="LastName" class="required" /></td>
+            <td id="invalid"> </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="Email"> Email </label>
+            </td>
+            <td><input type="email" id="Email" class="required" />
+            <td id="invalid"> </td>
+        </tr>
+
+        <tr>
+            <td><label for="Password"> Password </label></td>
+            <td><input type="password" id="Password" class="required" /></td>
+            <td id="invalid"> </td>
+        </tr>
+
+        <tr>
+            <td><label for="RePassword"> Re-enter Password </label></td>
+            <td><input type="Password" id="RePassword" class="required" /></td>
+            <td id="invalid"> </td>
+        </tr>
+
+        <tr id="Select_Input">
+            <td rowspan="2" style="text-align:center;"> Gender </td>
+            <td>
+                <input type="radio" id="Male" name="gender" value="Male" />
+                <label for="Male"> Male </label>
+            </td>
+        </tr>
+
+        <tr id="Select_Input">
+            <td><input type="radio" id="Female" name="gender" value="Female" />
+                <label for="Female"> Female </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="age"> Age </label>
+            </td>
+            <td>
+                <input type="number" id="age" class="required" />
+            </td>
+            <td id="invalid"> </td>
+        </tr>
+
+        <tr>
+            <td><label for="PhoneNo"> Phone Number </label></td>
+            <td><input type="tel" id="PhoneNo" class="required" /></td>
+            <td id="invalid"> </td>
+        </tr>
+
+        <tr>
+            <td rowspane="6"><label for="address"> Address </label></td>
+            <td><textarea id="address" rows="4" cols="65" class="required"></textarea></td>
+            <td id="invalid"> </td>
+        </tr>
+
+        <tr>
+            <td><label for="state"> State </label></td>
+            <td><input type="text" id="state" class="required" /></td>
+            <td id="invalid"> </td>
+        </tr>
+
+        <tr>
+            <td><label for="country"> Country </label></td>
+            <td style="text-align: left;">
+                <select id="country">
+                    <option value="" disabled selected> Choose your country </option>
+                    <option value="aus"> Australia </option>
+                    <option value="canada"> Canada </option>
+                    <option value="ind"> India </option>
+                    <option value="uk"> United Kingdom </option>
+                    <option value="usa"> United States of America </option>
+                </select>
+            </td>
+        </tr>
+
+        <tr id="Select_Input">
+            <td style="text-align:center"> Languages Known </td>
+            <td>
+                <input type="checkbox" id="Eng" value="Eng" />
+                <label for="Eng"> English </label>
+                <input type="checkbox" id="Kan" value="Kan" />
+                <label for="Kan"> Kannada </label>
+                <input type="checkbox" id="Hin" value="Hin" />
+                <label for="Hin"> Hindi </label>
+                <input type="checkbox" id="Tel" value="Tel" />
+                <label for="Tel"> Telugu </label>
+            </td>
+        </tr>
+
+        <tr id="Select_Input">
+            <td colspan="2">
+                <input type="checkbox" id="declare" value="declare" />
+                <label for="declare"> Hereby I declare that all the given details are true </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="text-align:right">
+                Log in to <a href="https://codemithra.com/"> Ethnus </a> website
+            </td>
+        </tr>
+    </table>
+
+    <button type="submit" id="RegisterButton" onclick="validateLogin(event)"> Register </button>
+
+    <script src="JS_Task8.js"></script>
+
+</body>
+
+</html>
